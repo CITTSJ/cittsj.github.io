@@ -1,7 +1,7 @@
 const miembros = [
     {
         nombre: 'Fernando Silva',
-        imagen: '/image/imagen1.jpg',
+        imagen: './image/imagen1.jpg',
         descripcion: 'Alumno CITT.'
     },
     // Agrega más miembros aquí...

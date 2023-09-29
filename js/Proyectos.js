@@ -4,16 +4,16 @@ const proyectos = [
         descripcion: 'Duckie Town es un proyecto de la Universidad de Montreal que busca desarrollar un sistema de conducción autónoma para vehículos de bajo costo...',
         descripcionModal: 'Esta es la descripción detallada para el modal de Duckie Town.',
         video: 'enlace_video_proyecto1',
-        imagen: '../image/duckie_bot.jpg',
-        imagenModal: '../image/duckie_bot_modal.jpg'
+        imagen: './image/duckie_bot.jpg',
+        imagenModal: './image/duckie_bot_modal.jpg'
     },
     {
         nombre: 'Chatbot-WWebjs',
         descripcion: 'Es un proyecto realizado en Node.js para realizar un chatbot de WhatsApp...',
         descripcionModal: 'Esta es la descripción detallada para el modal de Chatbot-WWebjs.',
         video: 'enlace_video_proyecto2',
-        imagen: '../image/wwebjs_bot.jpg',
-        imagenModal: '../image/wwebjs_bot_modal.jpg'
+        imagen: './image/wwebjs_bot.jpg',
+        imagenModal: './image/wwebjs_bot_modal.jpg'
     }
     // Agrega más proyectos aquí...
 ];
