@@ -17,7 +17,6 @@ const proyectos = [
     }
     // Agrega más proyectos aquí...
 ];
-
 function mostrarProyectos() {
     const proyectosContainer = document.getElementById('proyectosContainer');
 
@@ -31,7 +30,7 @@ function mostrarProyectos() {
 
         html += `
             <div class="col-md-6">
-                <div class="card mb-3" style="max-width: 640px;">
+                <div class="card mb-3" style="max-width: 640px; margin-bottom: 20px; margin-left: 10px;"> <!-- Añade margen izquierdo -->
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="${proyecto.imagen}" class="img-fluid rounded-start" alt="${proyecto.nombre}">

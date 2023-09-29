@@ -1,8 +1,11 @@
 // Empresas.js
 
 const empresas = [
-  { nombre: 'CITT', detalles: 'El centro nació con el objetivo de generar espacios y dinámicas', imagen: '/image/citt.png' },
-  { nombre: 'Proximamente', detalles: '', imagen: 'url_imagen_empresa2' }
+  {
+    nombre: 'CITT',
+    detalles: 'El centro nació con el objetivo de generar espacios y dinámicas',
+    imagen: '/image/citt.png'
+  },
   // Agrega más empresas aquí...
 ];
 
@@ -26,26 +29,27 @@ function mostrarEmpresas() {
   empresasCarousel.owlCarousel({
     loop: true,
     margin: 10,
+    center: true,
     responsiveClass: true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false
+      }
     }
   });
 }
 
 // Llamar a la función para mostrar empresas al cargar la página
-$(document).ready(function() {
+$(document).ready(function () {
   mostrarEmpresas();
 });

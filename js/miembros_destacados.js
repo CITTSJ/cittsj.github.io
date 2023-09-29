@@ -1,26 +1,25 @@
 const miembros = [
     {
-        nombre: 'Miembro 1',
-        imagen: '/image/citt.png',
-        descripcion: 'Descripción del Miembro 1.'
-    },
-    {
-        nombre: 'Miembro 2',
-        imagen: 'ruta/a/imagen2.jpg',
-        descripcion: 'Descripción del Miembro 2.'
+        nombre: 'Fernando Silva',
+        imagen: '/image/imagen1.jpg',
+        descripcion: 'Alumno CITT.'
     },
     // Agrega más miembros aquí...
 ];
+
 
 $(document).ready(function(){
     const owlCarousel = $('#miembrosCarousel');
     
     miembros.forEach(miembro => {
         const item = `
-            <div class="item">
-                <img src="${miembro.imagen}" alt="${miembro.nombre}">
+            <div class="item" >
+            <div class="col-md-12 text-center bg-body-tertiary" style="border-radius: 10px;" >
+                <img src="${miembro.imagen}" class="rounded-circle" alt="${miembro.nombre}" >
+                <br>
                 <h3>${miembro.nombre}</h3>
                 <p>${miembro.descripcion}</p>
+                </div>
             </div>
         `;
         owlCarousel.append(item);
@@ -29,6 +28,7 @@ $(document).ready(function(){
     owlCarousel.owlCarousel({
         loop: true,
         margin: 10,
+        center:true,
         responsiveClass: true,
         responsive:{
             0:{
