@@ -4,7 +4,7 @@ const empresas = [
   {
     nombre: 'CITT',
     detalles: 'El centro nació con el objetivo de generar espacios y dinámicas',
-    imagen: './image/citt.png'
+    imagen: './image/cittsj.png'
   },
   // Agrega más empresas aquí...
 ];

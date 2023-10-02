@@ -54,6 +54,25 @@ main{
   border-radius: 26px;
 }
 
+/* ... Otros estilos ... */
+
+/* Estilo para las secciones de Misión y Visión */
+.custom-section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajusta los valores según lo necesites */
+  border-radius: 10px;
+  padding: 20px; /* Agregamos relleno interno para separar el contenido del borde */
+  margin-bottom: 20px; /* Ajustamos el margen en la parte inferior */
+}
+
+.custom-section h2 {
+  color: rgba(19, 44, 170, 0.7);
+}
+
+.custom-section p {
+  color: #000; /* Cambia el color del texto según lo necesites */
+}
+
+/* ... Otros estilos ... */
 
 /* Agrega estilos para las secciones que quieres que tengan sombra */
 .sobre_nosotros, .proyectos, .mienbros, .actividades {
