@@ -1,244 +1,244 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-   <title>CITT - San Joaquín</title>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link href="./css/style.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-   <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   <link rel="shortcut icon" href="./image/cittsj.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>San Joquín | CITT </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="/image/cittsj.svg" type="image/x-icon">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <style src="css/cittsj.css"></style>
 </head>
 
 <body>
-   <header>
-      <nav class="navbar navbar-expand-lg bg-transparent">
-         <div class="container">
-            <a class="navbar-brand" href="#">
-               <img src="./image/citt.svg" alt="Descripción" height="100" width="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-               aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-               <ul class="navbar-nav bg-white" style="border-radius: 10px;">
-                  <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="#"><u>Inicio</u></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#sobre"><u>Nosotros</u></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#proyectos"><u>Proyectos</u></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#actividades"><u>Eventos</u></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#" id="unirseButton"><u>Unirse</u></a> <!-- Texto subrayado -->
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <div class="modal fade" id="modal-Unirse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Unirse a nuestro sitio</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <p>¿Eres miembro o deseas unirte a nuestra comunidad?</p>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" id="yaSoyMiembroButton">Ya soy miembro</button>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="quieroUnirmeButton">Quiero
-                     unirme</button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="modal fade" id="modal-QuieroUnirme" tabindex="-1" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Unirme a la comunidad</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <p>¡Genial! Por favor, completa el siguiente formulario para unirte a nuestra comunidad:</p>
-                  <iframe
-                     src="https://docs.google.com/forms/d/e/1FAIpQLSfcS3Dy2BZycsGZtS00v4T7ayxGZH2A4LpmCpx0dipORkXIDw/viewform?embedded=true"
-                     width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary">Unirme</button>
-               </div>
-            </div>
-         </div>
-      </div>
 
-      <div class="modal fade" id="modal-YaSoyMiembro" tabindex="-1" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión como miembro</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <form>
-                     <div class="mb-3">
-                        <label for="correoInstitucional" class="form-label">Correo Institucional</label>
-                        <input type="email" class="form-control" id="correoInstitucional"
-                           placeholder="correo@ejemplo.com" required>
-                     </div>
-                     <div class="mb-3">
-                        <label for="contrasena" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="contrasena" required>
-                     </div>
-                  </form>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <section class="Inicio">
-         <div class="container">
-            <div class="row d-flex">
-               <div class="col-md-8">
-                  <div class="text-bg">
-                     <h1>Hola<br> <span id="typed-element"></span><span class="typed-cursor typed-cursor--blink"
-                           aria-hidden="true">|</span>
-                        </span></h1>
-                     <p>Les presentamos el sitio web del CITT de San Joaquín, donde podrás encontrar información sobre
-                        los proyectos
-                        que se están realizando en la sede, como nuestras actividades y eventos y empresas
-                        colaboradoras.</p>
-                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#modal-Unirse">Unirse</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-   </header>
-   <main>
-      <div class="container">
-         <section class="sobre_nosotros" id="sobre">
-            <div class="px-4 py-5 my-5 text-center bg-white " style="border-radius: 10px;">
-               <h1 class="display-5 fw-bold text-body-emphasis text-decoration-underline" style="padding: 50px;"><p>Nosotros CITT</p></h1>
-               <div class="row g-2 custom-section">
-                  <div class="col-6">
-                     <h2 class="text-body-emphasis">Misión</h2>
-                     <p style="text-align:left;">
-                        Generar un espacio de interacción entre la sociedad y la comunidad académica para obtener un
-                        ambiente de
-                        innovación e investigación aplicada que, mediante el trabajo colaborativo y multidisciplinario,
-                        permita
-                        aportar a la formación de nuestros estudiantes.
-                     </p>
-                  </div>
-                  <div class="col-6 ">
-                     <h2 class="text-body-emphasis">Visión</h2>
-                     <p style="text-align: left;">
-                        Ser los principales agentes de innovación y transferencia tecnológica en la educación superior
-                        técnico
-                        profesional y constituirnos en una plataforma de encuentro entre la industria y los principales
-                        actores de
-                        innovación en el área TI de Chile.
-                     </p>
-                  </div>
-               </div>
-               <div class="container">
-                  <img src="./image/imagen_test1.jpg" alt="Descripción de la imagen" style="max-width: 75%; height: auto; border-radius: 10px;">
-              </div>              
-            </div>
-         </section>
-         <section class="proyectos bg-white" id="proyectos">
-            <div class="px-4 py-5 my-5 text-center bg-white" style="border-radius: 10px;">
-               <h1 class="display-5 fw-bold text-body-emphasis text-decoration-underline" style="padding: 10px;"><p>Proyectos</p></h1>
-               <p  class="custom-section" style="color: black;">Algunos de los proyectos que se están realizando los miembros del CITT en la
-                  sede.</p>
-            </div>
-            <div class="row" id="proyectosContainer">
-               <!-- Las tarjetas de proyectos se agregarán aquí mediante JavaScript -->
-            </div>
-         </section>
-         <section class="mienbros bg-white" id="mienbros">
-            <div class="px-4 py-5 my-5 text-center bg-white" style="border-radius: 10px;">
-               <h1 class="display-5 fw-bold text-body-emphasis text-decoration-underline" style="padding: 10px;"><p>Miembros</p></h1>
-               <p class="custom-section" style="color: black;">Conoce a los miembros y ayudantes del CITT de San Joaquín.</p>
-            </div>
-            <div class="owl-carousel " id="miembrosCarousel" style="border-radius: 10px;"></div>
-         </section>
-         <section class="actividades bg-white" id="actividades">
-            <div class="px-4 py-5 my-5 text-center bg-white" style="border-radius: 10px;">
-               <h1 class="display-5 fw-bold text-body-emphasis text-decoration-underline" style="padding: 10px;"><p>Actividades</p></h1>
-               <p class="custom-section" style="color: black;">Conoce las actividades y eventos que se realizan en la que participa el CITT de San Joaquín.</p>
-            </div>
-            <div class="container" id="actividadesContainer">
-               <!-- Las actividades se agregarán aquí mediante JavaScript -->
-            </div>
-         </section>
-   </main>
-   <footer>
-      <section class="empresa-colaboradoras ">
-         <div class="px-4 py-5  text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis text-decoration-underline"><p>Empresas Colaboradoras</p></h1>
-            <p style="color: white;">Les presentamos a las empresas que colaboran con nosotros.</p>
-         </div>
-         <section class="empresas" id="empresas">
-            <div class="container">
-               <div class="owl-carousel" id="empresasCarousel">
+  <header class="p-3 mb-md-3 border-bottom">
+    <div class="container">
+      <div class="d-flex px-md-3 mx-md-5 flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <img class="bi me-2" src="image/cittsj.svg" width="70" height="70">
+        </a>
 
-               </div>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#home" class="nav-link px-2 mx-2 link-secondary">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link px-2 mx-2 link-body-emphasis">Nosotros</a></li>
+          <li><a href="#lideres" class="nav-link px-2 mx-2 link-body-emphasis">Lideres</a></li>
+          <li><a href="#participacion" class="nav-link px-2 mx-2 link-body-emphasis">Participación</a></li>
+          <li><a href="#proyectos" class="nav-link px-2 mx-2 link-body-emphasis">Proyectos</a></li>
+        </ul>
+
+        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form> -->
+
+        <div class="dropdown text-end">
+          <a href="#" class="btn btn-primary rounded-pill">
+            Registrar
+            <!-- <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> -->
+          </a>
+
+          <!-- <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6 text-center align-items-center">
+        <img src="image/2023/1694059533607.jpeg" class="img-fluid shadow-lg" width="100%" height="100" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CITT SAN JOAQUIN</h1>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
+          prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-3">
+          <button type="button" class="btn btn-primary btn-lg">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg">Default</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="border-bottom border-danger border-5">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/image3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/image3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/image3.jpg" alt="">
+              </div>
             </div>
-         </section>
-         </div>
-      </section>
-   </footer>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <!-- Owl Carousel CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-   <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   <!-- Owl Carousel JS -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   <!-- Tu script para cargar los miembros en el carrusel -->
-   <script src="./js/miembros_destacados.js"></script>
-   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-   <script>
-      var typed = new Typed('#typed-element', {
-         strings: ['Bienvenido al CITT de San Joaquín', 'Bienvenido a la innovación', 'Bienvenido a la tecnología'],
-         typeSpeed: 70,
-         loop: true,
-         loopCount: Infinity,
-         showCursor: false // Oculta el cursor predeterminado
-      });
-   </script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"></script>
-   <script src="./js/Empresas.js"></script>
-   <script src="./js/Proyectos.js"></script>
-   <script src="./js/Actividades.js"></script>
-   <script src="./js/funciones_index.js"></script>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary mb-3">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-md-4">
+          <div class="card shadow text-start">
+            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Body</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-lg text-start">
+            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Body</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-lg text-start">
+            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Body</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
+          column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2023 CITT San Joaquín</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" src="image/citt.svg" width="50" height="50">
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 
 </html>
