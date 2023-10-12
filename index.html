@@ -8,9 +8,15 @@
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="/image/cittsj.svg" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <style>
+
+
+
     body {
       background: #f8f9fa;
+      font-family: 'Montserrat', sans-serif;
     }
     
     .swiper {
@@ -34,71 +40,114 @@
       object-fit: cover;
     }
   </style>
-  <style src="css/cittsj.css"></style>
+  <link rel="stylesheet" href="css/cittsj.css" />
+
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-md bg-dark p-2 mb-md-2 sticky-top border-bottom border-5 border-danger" data-bs-theme="dark">
+    <div class="container justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+        <img class="bi me-2" src="image/cittsj.svg" width="70" height="70">
+      </a>
 
-  <header class="p-3 mb-md-3 border-bottom">
-    <div class="container">
-      <div class="d-flex px-md-3 mx-md-5 flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-          <img class="bi me-2" src="image/cittsj.svg" width="70" height="70">
-        </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#home" class="nav-link px-2 mx-2 link-secondary">Inicio</a></li>
-          <li><a href="#nosotros" class="nav-link px-2 mx-2 link-body-emphasis">Nosotros</a></li>
-          <li><a href="#lideres" class="nav-link px-2 mx-2 link-body-emphasis">Lideres</a></li>
-          <li><a href="#participacion" class="nav-link px-2 mx-2 link-body-emphasis">Participación</a></li>
-          <li><a href="#proyectos" class="nav-link px-2 mx-2 link-body-emphasis">Proyectos</a></li>
-        </ul>
-
-        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form> -->
-
-        <div class="dropdown text-end">
-          <a href="#" class="btn btn-primary rounded-pill">
-            Registrar
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 d-none d-lg-flex">
+        <li><a href="#home" class="nav-link px-2 mx-2 link-emphasis">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link px-2 mx-2 link-body-emphasis">Nosotros</a></li>
+        <li><a href="#lideres" class="nav-link px-2 mx-2 link-body-emphasis">Lideres</a></li>
+        <li><a href="#participacion" class="nav-link px-2 mx-2 link-body-emphasis">Participación</a></li>
+        <li><a href="#proyectos" class="nav-link px-2 mx-2 link-body-emphasis">Proyectos</a></li>
+        
+        <li>
+          <a href="#" class="btn btn-primary px-2 mx-2 rounded-1 d-none d-lg-flex">
+            + Mujeres en las Tics
             <!-- <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> -->
           </a>
+        </li>
+      </ul>
 
-          <!-- <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul> -->
-        </div>
+      <div class="dropdown text-end">
+        <a href="#" class="btn btn-primary rounded-1 d-none d-lg-flex">
+          Registrar
+          <!-- <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> -->
+        </a>
+
+        <button class="btn btn-primary d-sm-flex d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          Menú
+        </button>
       </div>
     </div>
-  </header>
+  </nav>
+
+  <!-- MENU LATERAL -->
+  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+        <img class="bi me-2" src="image/cittsj.svg" width="70" height="70">
+      </a>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+        <span aria-hidden="true">✖️</span>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">CITT San Joaquín</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            Orders
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Customers
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6 text-center align-items-center">
-        <img src="image/2023/1694059533607.jpeg" class="img-fluid shadow-lg" width="100%" height="100" loading="lazy">
+        <img src="image/2023/1694059533607.jpeg" class="img-fluid shadow-lg rounded-top" width="100%" height="100" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CITT SAN JOAQUIN</h1>
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-citt">CITT SAN JOAQUIN</h1>
         <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
           popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
           prebuilt components, and powerful JavaScript plugins.</p>
         <div class="d-grid gap-3">
-          <button type="button" class="btn btn-primary btn-lg">Primary</button>
+          <button type="button" class="btn btn-primary bg-sj-danger rounded-2 btn-lg">Participar</button>
           <button type="button" class="btn btn-outline-secondary btn-lg">Default</button>
         </div>
       </div>
     </div>
   </div>
 
-
-  <div class="container mb-3">
+  <!-- <div class="container mb-3">
     <div class="row">
       <div class="col-md-6">
         <div class="border-bottom border-danger border-5">
@@ -121,82 +170,237 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="bg-primary mb-3">
+  <div class="bg-sj-info  mb-3">
     <div class="container">
       <div class="row p-3">
-        <div class="col-md-4">
-          <div class="card shadow text-start">
-            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+
+        <h1 class="text-center">METODOLOGÍA <strong>DE TRABAJO</strong></h1>
+
+        <p class="text-white text-center">
+          El Centro de Innovación y Transferencia Tecnológica (CITT), potencia las competencias de empleabilidad en nuestros estudiantes, que superan las expectativas que se logran solo cursando la malla curricular, ampliando además las opciones y oportunidades de desarrollo profesional, motivando al emprendimiento e innovación permanente.
+        </p>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5 shadow">
             <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-lg text-start">
-            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
             <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-lg text-start">
-            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
             <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
             </div>
           </div>
         </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
       </div>
     </div>
   </div>
 
-  
+  <div class="bg-sj-danger  mb-3">
+    <div class="container">
+      <div class="row p-3">
 
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        </svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-          column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        </svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+        <h1 class="text-center">METODOLOGÍA <strong>DE TRABAJO</strong></h1>
+
+        <p class="text-white text-center">
+          El Centro de Innovación y Transferencia Tecnológica (CITT), potencia las competencias de empleabilidad en nuestros estudiantes, que superan las expectativas que se logran solo cursando la malla curricular, ampliando además las opciones y oportunidades de desarrollo profesional, motivando al emprendimiento e innovación permanente.
         </p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        </svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
 
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5 shadow">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card rounded-5">
+            <div class="card-body">
+              <span class="float-start m-2 me-4">
+                  <img src="image/tracks/realidadvirtual.svg" style="height:100px" alt="" class="rounded-circle img-thumbnail">
+              </span>
+              <div class="d-grid">
+                  <h4 class="mt-1 mb-1">Profesor <br>Benjamin Mora</h4>
+                  <small>bej.mora@profesor.duoc.cl</small>
+                  <p>Docente CITT</p>
+                  <p>⚫ Proyecto Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
   </div>
-
 
 
   <!-- footer -->
@@ -239,6 +443,9 @@
       keyboard: true,
     });
   </script>
+
+
+
 </body>
 
 </html>

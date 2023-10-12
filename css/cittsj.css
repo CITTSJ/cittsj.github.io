@@ -37,10 +37,67 @@
     background-color: #3f78bb;
 }
 
-.bg-sj-info:hover {
+/* .bg-sj-info:hover {
     background-color: #2e5e9c;
+} */
+
+/* .bg-sj-info:focus {
+    background-color: #2e5e9c;
+} */
+
+.bg-sj-danger {
+    background-color: #EE1F76;
 }
 
-.bg-sj-info:focus {
-    background-color: #2e5e9c;
+.btn-sj-danger {
+    background: #EE1F76;
+    box-shadow: none;
+    width: 60%;
+    color: #fff;
 }
+
+.bg-sj-danger:hover {
+    background-color: #8e8e8e;
+    background: #EE1F76;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #EE1F76;
+    --bs-btn-border-color: #EE1F76;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #EE1F76; /* You can change this to a different color if desired */
+    --bs-btn-hover-border-color: #EE1F76; /* You can change this to a different color if desired */
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #EE1F76; /* You can change this to a different color if desired */
+    --bs-btn-active-border-color: #EE1F76; /* You can change this to a different color if desired */
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #EE1F76;
+    --bs-btn-disabled-border-color: #EE1F76;
+}
+
+.border-danger {
+    border-color: #EE1F76 !important;
+}
+
+.offcanvas.offcanvas-start {
+    width: 300px !important;
+}
+
+.text-citt {
+    color: #333;
+}
+
+
+/*************************/
+.slider-1 {
+	padding-top: 5rem;
+	padding-bottom: 3.25rem;
+}
+
+.slider-1 .slider-container {
+	text-align: center;
+}
+
